@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+This project is an AI-powered dashboard designed for analyzing trading card game (TCG) decks, tracking match statistics, and optimizing deck compositions. Using Reinforcement Learning (DQN/PPO), the AI simulates thousands of matches to understand the game mechanics, identify winning strategies, and provide actionable insights for deck building. The goal is to help players optimize their decks, improve performance, and make data-driven decisions.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Key Features
+🃏 Game Simulation & AI Training
 
-## Available Scripts
+Implements full game mechanics, including inkwell management, card interactions, attacking, and lore collection.
 
-In the project directory, you can run:
+Simulates thousands of matches to train the AI on strategic decision-making.
 
-### `npm start`
+Uses Deep Q-Learning (DQN) and Proximal Policy Optimization (PPO) to refine gameplay strategy.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The AI learns to play optimally, adapting to different deck compositions and playstyles.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📊 Match Tracking & Win Rate Analysis
 
-### `npm test`
+Logs AI match data to track deck performance over time.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Analyzes win/loss rates, common card plays, and key turn sequences.
 
-### `npm run build`
+Provides insights into deck weaknesses and strengths based on match history.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🔍 Deck Optimization & Recommendations
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Suggests card replacements based on performance trends.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Predicts best deck compositions using AI-driven insights.
 
-### `npm run eject`
+Helps players build competitive decks by identifying meta-relevant strategies.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🌐 Web Dashboard (Streamlit)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Displays AI-generated insights in a user-friendly dashboard.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Interactive visualizations for win rates, deck performance, and matchup analysis.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Allows users to upload new decks and receive AI recommendations.
 
-## Learn More
+🔄 Automated Data Updates
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Regularly fetches new cards and decklists after tournaments and set releases.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Ensures the AI remains up to date with the latest meta and strategies.
 
-### Code Splitting
+Tech Stack
+AI Model: TensorFlow / PyTorch (Reinforcement Learning - DQN/PPO)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Backend: Python (Flask/Django)
 
-### Analyzing the Bundle Size
+Frontend: Streamlit for interactive data visualization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Database: PostgreSQL / MySQL (card details, match data)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🚀 This AI-powered dashboard helps players improve their decks with smart, data-driven insights!
